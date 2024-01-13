@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="add-location-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+
+      div.gallery {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 33vw;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .centrado {
+        display: flex;
+        justify-content: center;
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
+    <title>Campamento Iglesia la Cruz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Paisaje, Deporte y Personas</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Asistencia.html">Asistencia</a></li>
+          <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="centrado">
+      <video
+        src="assets/videos/video5125459837555049290.mp4"
+        autoplay
+        muted
+        controls
+        width="400px"
+      ></video>
+    </div>
+    <div class="centrado">
+      <video
+        src="assets/videos/video5125459837555049333.mp4"
+        autoplay
+        muted
+        controls
+        width="400px"
+      ></video>
+    </div>
+    <section class="centrado">
+      <div class="gallery">
+        <img src="assets/img/IMG_0124.JPG" alt="" width="300px" />
+      </div>
+      <div class="gallery">
+        <img src="assets/img/IMG_0233.JPG" alt="" width="300px" />
+      </div>
+      <div class="gallery">
+        <img src="assets/img/IMG_0235.JPG" alt="" width="300px" />
+      </div>
+    </section>
+    <footer class="footer">&copy; Iglesia La Cruz 2024</footer>
+  </body>
+</html>

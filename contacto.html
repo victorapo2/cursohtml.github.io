@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="add-location-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        font-family: "Lucida Console", "Courier New", monospace;
+        background: linear-gradient(
+          to right,
+          rgb(189, 189, 255),
+          rgb(255, 233, 236)
+        );
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      h1 {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        color: #92a4ff;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      div.contenedor-formulario {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        clear: both;
+      }
+    </style>
+    <title>Campamento Iglesia la Cruz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contacto Iglesia La Cruz</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Asistencia.html">Asistencia</a></li>
+          <li><a href="audiovisuales.html">Audiovisuales</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor-formulario">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input
+          id="nombre"
+          type="text"
+          id="nombre"
+          placeholder="Escribi aqui tu nombre"
+          required
+          minlength="3"
+        />
+        <label for="Apellido">apellido:</label>
+        <input
+          id="apellido"
+          type="text"
+          id="apellido"
+          placeholder="Escribi aqui tu apellido"
+          required
+          minlength="3"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="mail"
+          id="email"
+          placeholder="Escribi aqui tu mail"
+          required
+        />
+        <label for="pais" required>Pais:</label>
+        <select name="pais" id="pais">
+          <option value="Argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Paragay">Paragay</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Peru">Peru</option>
+        </select>
+        <label for="Comentario" required>Comentario: </label>
+        <textarea
+          name="Comentario"
+          id="comentario"
+          placeholder="Escribi aqui tu comentario"
+        ></textarea>
+
+        <label for="motivo" required>Motivo de contacto: </label>
+        <input type="radio" id="motivo" name="motivo" /><i>Oracion</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Ofrenda</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Misiones</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Reclamos</i>
+        <input type="radio" id="motivo" name="motivo" /><i>Sugerencias</i>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    <footer class="footer">&copy; Iglesia La Cruz 2024</footer>
+  </body>
+</html>
